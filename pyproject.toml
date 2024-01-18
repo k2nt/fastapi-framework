@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "src"
+version = "0.1.0"
+description = "FastAPI framework"
+authors = ["k2nt <khai.tnguyen@outlook.com>"]
+license = "MIT License"
+readme = "README.md"
+packages = [
+    { include = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+colorama = "^0.4.6"
+pyyaml = "^6.0.1"
+
+[tool.poetry.scripts]
+start-app = "src.main:"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
