@@ -2,7 +2,9 @@ from typing import Dict, Optional
 
 import logging
 import logging.config
-from domain.logger import formatter as fmtr
+
+
+import src.domain.logger.formatter as fmtr
 
 
 _loggers: Dict[str, logging.Logger] = {}
@@ -12,7 +14,7 @@ def new_colored_logger(
     name: str,
     level: Optional[int] = logging.INFO,
 ) -> logging.Logger:
-    """Get instance of API logging object"""
+    """Register new colored logger object."""
     # Create logging object with given name
     logger = logging.getLogger(name)
 
@@ -32,6 +34,7 @@ def new_colored_logger(
 
 
 def get_logger(name: str) -> logging.Logger:
+    """Fetch logger object with given name."""
     if name not in _loggers:
         raise KeyError(f'cannot find logger with given name: {name}.')
     

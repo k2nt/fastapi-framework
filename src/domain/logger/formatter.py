@@ -1,6 +1,6 @@
 import logging
 
-from domain.logger import strfmt
+from src.domain.logger import strfmt
 
 
 _DEFAULT_TIME_FORMAT = "%Y-%m-%d %H:%M:%S"

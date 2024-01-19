@@ -15,7 +15,7 @@ colorama = "^0.4.6"
 pyyaml = "^6.0.1"
 
 [tool.poetry.scripts]
-start-app = "src.main:"
+start-app = "src.main:start"
 
 [build-system]
 requires = ["poetry-core"]

@@ -1,4 +1,1 @@
-from .logger import (
-    new_colored_logger,
-    get_logger
-)
+from src.domain.logger.logger import get_logger, new_colored_logger

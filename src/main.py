@@ -1,5 +1,5 @@
 import logging
-from domain.logger import new_colored_logger
+from src.domain.logger import new_colored_logger
 
 
 def start():
